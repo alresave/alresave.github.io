@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberto González | Staff Software Architect</title>
+  <meta name="description" content="Staff Software Architect specializing in Go, .NET, distributed systems, and cloud-native platforms.">
+
+  <!-- Elite Staff Engineer Portfolio Version -->
+
+  <style>
+
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --accent2: #7c3aed;
+      --border: #e2e8f0;
+      --gradient: linear-gradient(135deg,#2563eb,#7c3aed);
+    }
+
+    body.dark {
+      --bg: #020617;
+      --card: #0f172a;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
+      --gradient: linear-gradient(135deg,#3b82f6,#8b5cf6);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* HERO */
+
+    .hero {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 16px;
+      background: white;
+      padding: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .buttons {
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      margin-right: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      transition: 0.2s;
+    }
+
+    .btn.primary {
+      background: var(--gradient);
+      color: white;
+      border: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* SECTIONS */
+
+    section {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: 0.6s;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* PROJECT CARDS */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    /* DARK MODE BUTTON */
+
+    .toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 40px;
+    }
+
+    a { color: var(--accent); }
+
+  </style>
+</head>
+<body>
+
+<button class="toggle" onclick="toggleDarkMode()">🌙</button>
+
+<div class="container">
+
+  <!-- HERO -->
+
+  <div class="hero">
+    <img src="logo.png" class="logo">
+
+    <div>
+      <h1>Alberto González</h1>
+      <div class="title">Staff Software Architect | Go & .NET | Cloud</div>
+      <div class="meta">
+        Guadalajara · +52 3311134059 · alresave@gmail.com
+      </div>
+
+      <div class="buttons">
+        <a href="Alberto_Gonzalez_Staff_Architect_Go_DotNet_CV.pdf" class="btn primary">Download Resume</a>
+        <a href="https://github.com/yourusername" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" class="btn">LinkedIn</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+
+  <section>
+    <h2>Executive Summary</h2>
+    <p>
+      Staff Software Architect with 20+ years designing distributed systems, enterprise integrations, and cloud-native platforms using Go and .NET. Expert in scalable backend architecture, API design, and mission-critical systems.
+    </p>
+  </section>
+
+  <!-- IMPACT -->
+
+  <section>
+    <h2>Architectural Impact</h2>
+    <ul>
+      <li>Architected scalable microservices in Go supporting enterprise workloads.</li>
+      <li>Led modernization from monoliths to distributed cloud-native systems.</li>
+      <li>Designed enterprise integrations with Salesforce and Oracle.</li>
+      <li>Improved scalability, performance, and reliability.</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section>
+    <h2>Key Expertise</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <strong>Backend Architecture</strong>
+        <p>Go, .NET, microservices, distributed systems</p>
+      </div>
+
+      <div class="card">
+        <strong>Cloud Platforms</strong>
+        <p>AWS, Azure, Kubernetes, Docker</p>
+      </div>
+
+      <div class="card">
+        <strong>Enterprise Integrations</strong>
+        <p>Salesforce, Oracle, ERP systems</p>
+      </div>
+
+      <div class="card">
+        <strong>Databases</strong>
+        <p>PostgreSQL, Redis, SQL Server</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Alberto González · Staff Architect Portfolio
+  </footer>
+
+</div>
+
+<script>
+
+// Dark mode persistent
+
+if(localStorage.getItem("dark") === "true"){
+  document.body.classList.add("dark");
+}
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark");
+  localStorage.setItem("dark", document.body.classList.contains("dark"));
+}
+
+// Scroll animations
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+    }
+  });
+});
+
+
+document.querySelectorAll("section").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+</html>
