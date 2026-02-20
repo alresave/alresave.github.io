@@ -194,7 +194,7 @@
 
   </style>
 </head>
-<body>
+<body class="dark">
 
 <button class="toggle" onclick="toggleDarkMode()">🌙</button>
 
@@ -283,7 +283,10 @@
 
 // Dark mode persistent
 
-if(localStorage.getItem("dark") === "true"){
+// Force dark mode by default
+localStorage.setItem("dark", "true");
+
+if(localStorage.getItem("dark") === "true"){ 
   document.body.classList.add("dark");
 }
 
